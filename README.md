@@ -21,7 +21,8 @@ Each day, I solve one SQL problem, explain my thought process, and reflect on wh
 Each file contains:
 - **Problem statement**  
 - **My thought process**  
-- **SQL solution**  
+- **SQL solution**
+  
 
 
 ## 🧠 How I Approach Each Problem
