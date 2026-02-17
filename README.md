@@ -22,7 +22,7 @@ Each file contains:
 - **Problem statement**  
 - **My thought process**  
 - **SQL solution**  
-- **What I learned**  
+
 
 ## 🧠 How I Approach Each Problem
 1. Understand the question  
