@@ -1,4 +1,4 @@
-# Day 01 – SQL Practice
+# Day 31 – SQL Practice
 
 ## Problem Statement
 𝐌𝐮𝐬𝐭 𝐓𝐫𝐲: Spotify(Hard Level) hashtag#SQL Interview Question — Solution
