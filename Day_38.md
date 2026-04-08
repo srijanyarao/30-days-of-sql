@@ -37,12 +37,15 @@ with host_count_each_year AS(
      GROUP BY strftime('%Y', host_since)
 ),
 growth_rate AS(
-    SELECT current_year, current_year_hosts,
+    SELECT current_year, 
+           current_year_hosts,
            LAG(current_year_hosts) OVER (ORDER BY current_year) AS previous_year_hosts,
            ((current_year_hosts-LAG(current_year_hosts) OVER (ORDER BY current_year))*100.0/LAG(current_year_hosts) OVER (ORDER BY current_year)) AS growth_rate
       FROM host_count_each_year
 )
-SELECT current_Year,current_year_hosts,
-       previous_year_hosts,growth_rate
+SELECT current_Year,
+       current_year_hosts,
+       previous_year_hosts,
+       growth_rate
   FROM growth_rate
  ORDER BY current_Year ASC;
