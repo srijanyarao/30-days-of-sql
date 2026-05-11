@@ -50,7 +50,7 @@ GROUP BY
     strftime('%H', customer_placed_order_datetime)
 
 ORDER BY 
-    CAST(strftime('%w', customer_placed_order_datetime) AS INT),
+    week_day,
     order_hour;
 ```
 
