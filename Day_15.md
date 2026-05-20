@@ -32,15 +32,18 @@ SELECT g.id, g.from_user, g.to_user, g.day
  ORDER BY g.day;
 ```
 ## 🎯 Pattern: CTE + Aggregation + JOIN
+
 Overall Pattern Explanation
+
 This problem uses a three‑step SQL pattern:
 
 1️⃣ CTE for Aggregation
+
 You first compute:
 
-distinct receivers per day
+- distinct receivers per day
 
-distinct senders per day
+- distinct senders per day
 
 Using:
 
@@ -51,13 +54,16 @@ COUNT(DISTINCT from_user)
 This is a conditional day‑level summary.
 
 2️⃣ JOIN Back to Original Table
+
 Once you know which days satisfy the condition
+
 ```sql
 distinct_receivers > distinct_senders
 ```
 you JOIN the CTE back to the main table to return all rows from those days.
 
 3️⃣ Filter + Order
+
 Finally, filter on the condition and order by day.
 
 This pattern is extremely common in:
