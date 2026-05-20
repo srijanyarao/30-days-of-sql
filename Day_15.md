@@ -31,6 +31,27 @@ SELECT g.id, g.from_user, g.to_user, g.day
  WHERE d.distant_receivers > d.distant_senders
  ORDER BY g.day;
 ```
+## Output
+
+| id  | from_user           | to_user             | day |
+|-----|----------------------|----------------------|-----|
+| 4   | 6edf0be4b2267df1fa   | 47be2887786891367e   | 1   |
+| 7   | 6edf0be4b2267df1fa   | 850badf89ed8f06854   | 1   |
+| 8   | 6edf0be4b2267df1fa   | 6b503743a13d778200   | 1   |
+| 10  | 6edf0be4b2267df1fa   | 5b8754928306a18b68   | 2   |
+| 14  | 6edf0be4b2267df1fa   | 157e3e9278e32aba3e   | 2   |
+| 1   | 6edf0be4b2267df1fa   | 32ded68d89443e808    | 6   |
+| 3   | 6edf0be4b2267df1fa   | e0e0defbb9ec47f6f7   | 6   |
+| 5   | 6edf0be4b2267df1fa   | 2813e59cf6c1ff698e   | 6   |
+| 15  | 75d295377a46f83236   | 75d295377a46f83236   | 6   |
+| 6   | 6edf0be4b2267df1fa   | a84065b7933ad01019   | 8   |
+| 11  | 6edf0be4b2267df1fa   | 6edf0be4b2267df1fa   | 8   |
+| 16  | 75d295377a46f83236   | d63386c884aeb9f71d   | 8   |
+| 0   | 6edf0be4b2267df1fa   | 75d295377a46f83236   | 10  |
+| 2   | 6edf0be4b2267df1fa   | 55e60cfcc9dc49c17e   | 10  |
+| 18  | 75d295377a46f83236   | 47be2887786891367e   | 10  |
+| 19  | 75d295377a46f83236   | 5b8754928306a18b68   | 10  |
+
 ## 🎯 Pattern: CTE + Aggregation + JOIN
 
 Overall Pattern Explanation
