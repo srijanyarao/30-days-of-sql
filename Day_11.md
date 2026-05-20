@@ -38,3 +38,10 @@ GROUP BY i.product_id;
 | 3 | orange | 3 |
 | 4 | clementines | 1 |
 | 5 | blood_orange | 2 |
+
+## Pattern:
+JOIN + GROUP BY (Aggregation)
+
+### Why this pattern fits:
+This problem combines joining two related tables and grouping results to count transactions per product.
+It’s one of the most common SQL interview patterns — used whenever you need to merge datasets and then summarize the combined data.
