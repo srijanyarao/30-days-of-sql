@@ -33,7 +33,7 @@ SELECT ABS(Max(CASE  WHEN d.department = 'marketing' THEN e.salary ELSE 0 END) -
 |---------------------------|
 | 13285                     |
 
-## Pattern:
+## Pattern
 JOIN + Conditional Aggregation (CASE inside MAX)
 
 🔹 Why this pattern fits:
